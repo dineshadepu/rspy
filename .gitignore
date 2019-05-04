@@ -1,0 +1,28 @@
+## Images
+*.gnuplot
+examples/images/*.svg
+test.png
+
+## IDE config
+.vscode
+.idea
+
+## Compiled assets
+/target
+lib/target
+**/*.rs.bk
+
+## Local plotlib checkout
+plotlib/
+
+## Python environment
+venv/
+
+## LaTeX files
+description/*.log
+__*.tex
+*.fdb_latexmk
+*.aux
+*.xdv
+*.fls
+*.synctex.gz

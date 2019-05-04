@@ -1,0 +1,20 @@
+[package]
+name = "cfd_py"
+version = "0.1.0"
+authors = ["dineshadepu <adepu.dinesh.a@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+cfd_rust= { path = "../lib/" }
+numpy = "0.4.0"
+ndarray = "0.12.1"
+num-traits = "0.2"
+
+[dependencies.pyo3]
+version = "0.5.2"
+features = ["extension-module"]
+
+[lib]
+name = "cfdpy"
+path = "src/lib.rs"
+crate-type = ["cdylib"]
