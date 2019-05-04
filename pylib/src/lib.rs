@@ -19,9 +19,8 @@ fn array_operation(_py: Python, m: &PyModule) -> PyResult<()> {
     //     sum_array(&arr)
     // }
     fn sum_array_py(py: Python, arr: PyArray1<f64>) -> f64 {
-        let close = arr.to_owned();
-        let close = close.as_array();
-        sum_array(&close)
+        let data = arr.as_array();
+        sum_array(&data)
     }
     Ok(())
 }
